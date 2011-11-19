@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Url:
+  = @feed.url
+%p
+  %b Name:
+  = @feed.name
+%p
+  %b Feed url:
+  = @feed.feed_url
+%p
+  %b Author:
+  = @feed.author
+%p
+  %b Twitter username:
+  = @feed.twitter_username
+
+= link_to 'Edit', edit_feed_path(@feed)
+\|
+= link_to 'Back', feeds_path

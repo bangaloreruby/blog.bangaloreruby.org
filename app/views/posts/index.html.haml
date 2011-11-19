@@ -1,0 +1,15 @@
+#site
+  .right.right_column
+    = render :partial=>'posts/whos_talking'
+    %br/
+    %br/
+    = render :partial=>'posts/archive'
+  .left.left_column
+    - for post in @posts
+      %h1= link_to post.title, post.url
+      %h2
+        = distance_of_time_in_words(Time.now, post.published)
+        ago | #{link_to "#{post.feed.author}: #{post.feed.name}", post.feed.url}
+      %p.content= post.contents.html_safe
+      .clear
+  .clear

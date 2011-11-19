@@ -1,0 +1,5 @@
+%h2 Who is talking?
+%ul
+  - @active_feeds.each { |feed|
+  %li= link_to(feed.author, posts_by_author_url(feed))
+  - }

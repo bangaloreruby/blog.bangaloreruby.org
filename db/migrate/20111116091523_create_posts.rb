@@ -1,0 +1,13 @@
+class CreatePosts < ActiveRecord::Migration
+  def change
+    create_table :posts do |t|
+      t.text :contents
+      t.string :title
+      t.string :url
+      t.datetime :published
+      t.datetime :updated
+      t.integer :feed_id
+      t.timestamps
+    end
+  end
+end
