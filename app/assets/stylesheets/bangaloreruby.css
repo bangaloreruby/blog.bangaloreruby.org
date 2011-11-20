@@ -2,6 +2,7 @@ body  {
 	font: normal 13px Arial, sans-serif;
 	color: #222;
 	margin: 0 auto;
+	background-image:url('/assets/bg.jpg');
 	padding: 0 0 0 0;
 	line-height: 160%;
 }
