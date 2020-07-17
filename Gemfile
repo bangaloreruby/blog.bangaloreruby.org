@@ -20,7 +20,7 @@ end
 gem 'json'
 
 gem 'atom'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 3.1.3'
 gem "haml-rails"
 
 # To use ActiveModel has_secure_password
